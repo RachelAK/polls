@@ -57,6 +57,9 @@ def vote(request, question_id):
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, '../templates/polls/results.html', {'question': question})
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 07beb5cf86c8911de7175b9d156636ea346fd872
 
