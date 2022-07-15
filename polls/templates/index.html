@@ -1,4 +1,29 @@
+<style>
+body {
+    background-image: linear-gradient(lightblue, rgb(63, 63, 161));
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  li{
+  border: 2px solid rgb(179, 19, 253);
+  margin: 50px;
+  font-size: 30px;
+
+  }
+</style>
 <h1>Polls</h1>
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}

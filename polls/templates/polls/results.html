@@ -1,0 +1,27 @@
+<style>body {
+    background-color: lightblue;
+    background-image: linear-gradient(lightblue, rgb(63, 63, 161));
+
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+  li {
+      font-size: 30px;
+  }
+  </style>
+  
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<button>
+<a href="{% url 'polls:detail' question.id %}">Vote again?</a> 
+</button>

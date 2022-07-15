@@ -1,4 +1,11 @@
-{{question}}
+<style>body {
+    background-color: lightblue;
+    background-image: linear-gradient(rgb(63, 63, 161), lightblue);
+  }
+  
+h1 {
+    color: aliceblue;
+}</style>
 
 </ul>
 <form action="{% url 'polls:vote' question.id %}" method="post">
